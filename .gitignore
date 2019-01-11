@@ -1,0 +1,85 @@
+# General
+
+## Logs
+*.log
+
+## Archives
+*.zip
+*.tar.gz
+*.rar
+
+## Temporary
+*.tmp
+
+## Thumbnails
+.DS_Store
+Thumbs.db
+
+# Xtext
+
+## Java compiled
+*.class
+
+## Java virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+## Java package
+*.jar
+*.war
+*.nar
+*.ear
+
+## Xtext generated
+xtend-gen/
+xtext-gen/
+src-gen/
+**/model/generated/
+
+## Xtext build
+build/
+bin/
+.gradle/
+
+# VS Code extension
+
+## Dependencies
+node_modules
+npm-debug.log
+package-lock.json.orig
+
+## Build TypeScript
+out
+
+## Build VS Code extension package
+*.vsix
+
+## IDE
+
+## Eclipse
+.metadata/
+/.recommenders/
+
+## Eclipse project
+.settings/
+.classpath
+.project
+
+## BlueJ files
+*.ctxt
+
+## Jetbrains
+/.idea
+
+## VS Code config
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+## VS Code test run
+.vscode-test/
+
+## Sublime
+.settings/
+*.sublime-workspace
+

@@ -1,0 +1,13 @@
+task installLanguageServerDist(type: Sync) {
+	description 'Installs example language server into the VS Code extension.'
+	def installDistTask = project(':org.xtext.example.mydsl.ide').tasks.installDist
+	dependsOn installDistTask
+	from installDistTask.outputs
+	into 'language-server'
+}
+
+clean {
+    doLast {
+        delete installLanguageServerDist.outputs
+    }
+}

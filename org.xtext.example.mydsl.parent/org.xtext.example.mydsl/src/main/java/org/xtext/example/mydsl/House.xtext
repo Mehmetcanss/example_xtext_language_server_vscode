@@ -1,0 +1,13 @@
+grammar org.xtext.example.mydsl.House with org.xtext.example.mydsl.Person
+
+
+import 'http://www.xtext.org/example/mydsl/Person' as person
+
+//registers the ePackage at http://www.xtext.org/example/mydsl/House
+generate house "http://www.xtext.org/example/mydsl/House"
+
+
+House:
+	'house' name = ID '{'
+	persons+=Person*
+	'}';

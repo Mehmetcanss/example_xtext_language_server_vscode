@@ -1,0 +1,15 @@
+grammar org.xtext.example.mydsl.Person 
+	with org.eclipse.xtext.common.Terminals
+
+//registers the ePackage at http://www.xtext.org/example/mydsl/Person
+generate person "http://www.xtext.org/example/mydsl/Person"
+
+
+Person:
+	'person' name=ID '{'
+	friends += Friend*
+	'}'
+;
+
+Friend:
+	'friend' name=ID ;
